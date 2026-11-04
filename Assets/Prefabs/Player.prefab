@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6845263730401075001
+--- !u!1 &166359092313306293
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,27 +8,33 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5951138710811003022}
-  - component: {fileID: 2752891567947427235}
-  - component: {fileID: 5427988359347672187}
-  - component: {fileID: 8362665743573471928}
-  - component: {fileID: 6200483146014634087}
-  - component: {fileID: 6680443703274352283}
-  - component: {fileID: 7044754056129742506}
+  - component: {fileID: 5422090022400346943}
+  - component: {fileID: 2872202085416557766}
+  - component: {fileID: 8286606709108103350}
+  - component: {fileID: 1026334345711136075}
+  - component: {fileID: 6742037534099103750}
+  - component: {fileID: 7402956398147560310}
+  - component: {fileID: 5059825116984018739}
+  - component: {fileID: 4754924535191529526}
+  - component: {fileID: 810292398702654959}
+  - component: {fileID: 1914462336722662118}
+  - component: {fileID: 7066911257209099896}
+  - component: {fileID: 4568270009132295318}
+  - component: {fileID: 7760090508914946476}
   m_Layer: 0
-  m_Name: PlayerAvatar
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5951138710811003022
+--- !u!4 &5422090022400346943
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6845263730401075001}
+  m_GameObject: {fileID: 166359092313306293}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -37,21 +43,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &2752891567947427235
+--- !u!33 &2872202085416557766
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6845263730401075001}
+  m_GameObject: {fileID: 166359092313306293}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!136 &5427988359347672187
+--- !u!136 &8286606709108103350
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6845263730401075001}
+  m_GameObject: {fileID: 166359092313306293}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -68,13 +74,13 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &8362665743573471928
+--- !u!23 &1026334345711136075
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6845263730401075001}
+  m_GameObject: {fileID: 166359092313306293}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -117,13 +123,13 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6200483146014634087
+--- !u!114 &6742037534099103750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6845263730401075001}
+  m_GameObject: {fileID: 166359092313306293}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
@@ -144,13 +150,13 @@ MonoBehaviour:
   AutoObjectParentSync: 1
   SyncOwnerTransformWhenParented: 1
   AllowOwnerToParent: 0
---- !u!114 &6680443703274352283
+--- !u!114 &7402956398147560310
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6845263730401075001}
+  m_GameObject: {fileID: 166359092313306293}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
@@ -190,23 +196,53 @@ MonoBehaviour:
   SwitchTransformSpaceWhenParented: 0
   Interpolate: 1
   SlerpPosition: 0
---- !u!114 &7044754056129742506
+--- !u!114 &5059825116984018739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6845263730401075001}
+  m_GameObject: {fileID: 166359092313306293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd3cffdcc17de994a8f39ddaf2e526eb, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b02b1892fd486a45958f2db2e8324f7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerAvatar
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   ShowTopMostFoldoutHeaderGroup: 1
-  cubePrefab: {fileID: 7802758059001225575, guid: 0e572976255a8684a997dce6be5cee4b, type: 3}
-  velocidad: 5
-  alcanceGolpe: 3
-  nombre:
+  speed: 5
+--- !u!114 &4754924535191529526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166359092313306293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea0a1825ae06794db14408396d35712, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RpcDemo
+  ShowTopMostFoldoutHeaderGroup: 1
+--- !u!114 &810292398702654959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166359092313306293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a786fa87df04f9744928af962e8fceb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaDemo
+  ShowTopMostFoldoutHeaderGroup: 1
+  damagePerHit: 10
+  health:
+    UpdateTraits:
+      MinSecondsBetweenUpdates: 0
+      MaxSecondsBetweenUpdates: 0
+    m_InternalValue: 100
+  playerName:
     UpdateTraits:
       MinSecondsBetweenUpdates: 0
       MaxSecondsBetweenUpdates: 0
@@ -244,23 +280,72 @@ MonoBehaviour:
         byte0027: 0
         byte0028: 0
         byte0029: 0
-  vida:
+--- !u!114 &1914462336722662118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166359092313306293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95124d2770671dd49b3e793680b13ea4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpawnDemo
+  ShowTopMostFoldoutHeaderGroup: 1
+  cubePrefab: {fileID: 7802758059001225575, guid: 0e572976255a8684a997dce6be5cee4b, type: 3}
+  reach: 3
+--- !u!114 &7066911257209099896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166359092313306293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e12cabc3d9011b44fbf98cc6277d07ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MochilaDemo
+  ShowTopMostFoldoutHeaderGroup: 1
+  backpack:
     UpdateTraits:
       MinSecondsBetweenUpdates: 0
       MaxSecondsBetweenUpdates: 0
-    m_InternalValue: 100
-  experiencia:
+--- !u!114 &4568270009132295318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166359092313306293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab30841636e91964da929a173a773e92, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnticipacionDemo
+  ShowTopMostFoldoutHeaderGroup: 1
+  ammo:
     UpdateTraits:
       MinSecondsBetweenUpdates: 0
       MaxSecondsBetweenUpdates: 0
-    m_InternalValue: 0
-  mochila:
-    UpdateTraits:
-      MinSecondsBetweenUpdates: 0
-      MaxSecondsBetweenUpdates: 0
-  pasosServidor:
-    UpdateTraits:
-      MinSecondsBetweenUpdates: 0
-      MaxSecondsBetweenUpdates: 0
-  pasosPredichos: 0
-  correcciones: 0
+    m_AuthoritativeValue:
+      UpdateTraits:
+        MinSecondsBetweenUpdates: 0
+        MaxSecondsBetweenUpdates: 0
+      m_InternalValue: 10
+    StaleDataHandling: 0
+--- !u!114 &7760090508914946476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166359092313306293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac633267fa9da254d8f2c22b8d8853ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RebobinadoDemo
+  ShowTopMostFoldoutHeaderGroup: 1
+  reach: 3
