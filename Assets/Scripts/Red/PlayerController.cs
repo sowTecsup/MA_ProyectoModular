@@ -22,7 +22,7 @@ public class PlayerController : NetworkBehaviour
 
     private void Update()
     {
-        if (!IsOwner) return;
+        if (!IsOwner || TextChatManager.Escribiendo) return;   // quieto mientras escribes en el chat (modulo 12)
 
         var movement = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         transform.position += movement * speed * Time.deltaTime;
